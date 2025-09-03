@@ -20,3 +20,18 @@ document.getElementById('loginButton').addEventListener('click', function(e) {
       return
    }
 })
+
+const pinInput = document.getElementById("pin-number");
+  const togglePin = document.getElementById("toggle-pin");
+  let isVisible = false;
+
+  togglePin.addEventListener("click", () => {
+    if (isVisible) {
+      pinInput.type = "password";
+      togglePin.innerHTML = `<i class="fa-solid fa-eye"></i>`;
+    } else {
+      pinInput.type = "text";
+      togglePin.innerHTML = `<i class="fa-solid fa-eye-slash"></i>`;
+    }
+    isVisible = !isVisible;
+  });
