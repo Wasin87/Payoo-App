@@ -1,3 +1,10 @@
+
+// Logout button functionality
+    document.getElementById("logout-btn").addEventListener("click", function() {
+      alert("You have been logged out!");
+      window.location.href = "index.html";  
+    });
+
 const validPin = 5656;
 const bonusCoupon = 'AB34F7'
 const transactionData = []
@@ -69,11 +76,18 @@ document.getElementById('add-money-btn').addEventListener('click', function(e){
     const totalNewAvailableBalance = amount + availableBalance;
      setInnerText('available-balance', totalNewAvailableBalance);
 
-     const data = {
-        name : "Add Money",
-        date : new Date().toLocaleTimeString()
-     }
-     transactionData.push(data)
+const data = {
+    name: `<span class="text-white">Transfer Money</span>`,
+    date: `<span class="text-white">${new Date().toLocaleTimeString('en-US', { 
+        hour: 'numeric', 
+        minute: 'numeric', 
+        second: 'numeric', 
+        hour12: true 
+    })}</span>`
+};
+
+transactionData.push(data);
+
     
 });
 
@@ -109,11 +123,18 @@ document.getElementById('Withdraw-btn').addEventListener('click', function(e){
     const totalNewAvailableBalance = availableBalance - amount;
     setInnerText('available-balance', totalNewAvailableBalance);
 
-    const data = {
-        name: "Cash Out",
-        date: new Date().toLocaleTimeString()
-    };
-    transactionData.push(data);
+const data = {
+    name: `<span class="text-white">Transfer Money</span>`,
+    date: `<span class="text-white">${new Date().toLocaleTimeString('en-US', { 
+        hour: 'numeric', 
+        minute: 'numeric', 
+        second: 'numeric', 
+        hour12: true 
+    })}</span>`
+};
+
+transactionData.push(data);
+
 });
 
 
@@ -153,11 +174,18 @@ document.getElementById('Transfer-btn').addEventListener('click', function(e){
     const totalNewAvailableBalance = availableBalance - amount ;
      setInnerText('available-balance', totalNewAvailableBalance);
 
-    const data = {
-        name: "Transfer Money",
-        date: new Date().toLocaleTimeString()
-    };
-    transactionData.push(data);
+const data = {
+    name: `<span class="text-white">Transfer Money</span>`,
+    date: `<span class="text-white">${new Date().toLocaleTimeString('en-US', { 
+        hour: 'numeric', 
+        minute: 'numeric', 
+        second: 'numeric', 
+        hour12: true 
+    })}</span>`
+};
+
+transactionData.push(data);
+
      
 });
 
@@ -167,9 +195,9 @@ document.getElementById('Transactions-button').addEventListener('click', functio
   for (const data of transactionData) {
     const div = document.createElement("div")
     div.innerHTML = `
-      <div class="bg-white rounded-xl p-3 flex justify-between items-center mt-3">
+      <div class="bg-gradient-to-br from-[#182f6a] via-[#1b2960] to-[#17386c] rounded-xl p-3 flex justify-between items-center mt-3">
         <div class="flex items-center">
-          <div class="p-3 rounded-full bg-[#f4f5f7]">
+          <div class="p-3 rounded-full bg-[#2353b5]">
             <img src="assets/purse1.png" class="mx-auto" alt="">
           </div>
           <div class="ml-3">
@@ -177,7 +205,7 @@ document.getElementById('Transactions-button').addEventListener('click', functio
             <p>${data.date}</p>
           </div>
         </div>
-        <i class="fa-solid fa-ellipsis-vertical"></i>
+       <i class="fa-solid fa-ellipsis-vertical" style="color: #fcfcfc;"></i>
       </div>
     `
     TransactionContainer.appendChild(div)
@@ -236,11 +264,18 @@ document.getElementById('pay-money-btn').addEventListener('click', function(e){
     const totalNewAvailableBalance = availableBalance - payAmount ;
      setInnerText('available-balance', totalNewAvailableBalance);
 
-    const data = {
-        name: "Transfer Money",
-        date: new Date().toLocaleTimeString()
-    };
-    transactionData.push(data);
+const data = {
+    name: `<span class="text-white">Transfer Money</span>`,
+    date: `<span class="text-white">${new Date().toLocaleTimeString('en-US', { 
+        hour: 'numeric', 
+        minute: 'numeric', 
+        second: 'numeric', 
+        hour12: true 
+    })}</span>`
+};
+
+transactionData.push(data);
+
 });
 
 

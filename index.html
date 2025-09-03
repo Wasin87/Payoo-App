@@ -8,32 +8,43 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a2d9d6c123.js" crossorigin="anonymous"></script>
 </head>
-<body class="bg-[#f4f5f7] h-screen flex flex-col items-center justify-center">
+<body class="bg-gradient-to-r from-[#0a0f24] via-[#0d1b3d] to-[#112a52] h-screen flex flex-col items-center justify-center">
 
-  <div class="h-[130px] w-[300px] bg-[url('assets/bg.png')] bg-cover flex justify-center items-center">
-    <img src="assets/Group.png" alt="logo">
+  <div class="h-[130px] w-[300px] sm:h-[150px] sm:w-[320px] bg-[url('assets/bg.png')] bg-cover flex justify-center items-center">
+    <img src="assets/Group.png" alt="logo" class="sm:w-[150px] sm:h-auto">
   </div>
 
-  <form class="border rounded-lg h-[280px] w-[360px] bg-white flex flex-col items-center justify-center p-6 shadow-md mt-5">
+  <form class="border rounded-2xl h-[280px] w-[90%] max-w-[360px] sm:h-[300px] sm:w-[360px] 
+               bg-gradient-to-br from-[#0d1b3d] via-[#0a0f24] to-[#112a52] 
+               flex flex-col items-center justify-center p-6 shadow-xl mt-5">
     <div class="w-full">
-      <label for="mobile-number" class="font-bold">Mobile Number</label><br>
+      <label for="mobile-number" class="font-bold text-white">Mobile Number</label><br>
       <input type="text" placeholder="Enter your number" id="mobile-number"
-             class="input bg-[#f4f5f7] w-full rounded-full mt-3 px-4 py-2" />
+             class="input bg-white/20 text-white placeholder-gray-300 w-full rounded-full mt-3 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400" />
     </div>
 
-<div class="mt-5 w-full">
-  <label for="pin-number" class="font-bold">4 Digit Pin</label><br>
-  <div class="relative mt-3">
-    <input type="password" placeholder="Enter 4 Digit Pin" id="pin-number"
-      class="input bg-[#f4f5f7] w-full rounded-full px-4 py-2 pr-10" />
-    <span id="toggle-pin" class="absolute inset-y-0 right-3 flex items-center cursor-pointer text-gray-500">
-      <i class="fa-solid fa-eye"></i>
-    </span>
-  </div>
-</div>
+    <div class="mt-5 w-full">
+      <label for="pin-number" class="font-bold text-white">4 Digit Pin</label><br>
+      <div class="relative mt-3">
+        <input type="password" placeholder="Enter 4 Digit Pin" id="pin-number"
+          class="input bg-white/20 text-white placeholder-gray-300 w-full rounded-full px-4 py-2 pr-10 focus:outline-none focus:ring-2 focus:ring-blue-400" />
+        <span id="toggle-pin" class="absolute inset-y-0 right-3 flex items-center cursor-pointer text-gray-300">
+          <i class="fa-solid fa-eye"></i>
+        </span>
+      </div>
+    </div>
 
-    <button type="submit" class="btn bg-[#0874F2] text-white w-full rounded-full mt-5 hover:bg-blue-900 hover:text-white transition duration-500" id="loginButton">
+    <button type="submit" id="loginButton"
+      class="btn w-full rounded-full mt-5 px-6 py-3 text-white font-semibold 
+         bg-gradient-to-r from-blue-700 to-blue-900 
+         hover:from-blue-800 hover:to-blue-950 
+         transition duration-500 relative 
+         before:absolute before:inset-0 before:rounded-full 
+         before:border-2 before:border-transparent 
+         hover:before:border-blue-400 hover:before:shadow-lg" >
       Login
     </button>
   </form>
