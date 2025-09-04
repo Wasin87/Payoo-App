@@ -13,13 +13,13 @@
 </head>
 <body class="bg-gradient-to-r from-[#0a0f24] via-[#0d1a35] to-[#132a4f] min-h-screen w-full">
 
-  <div class="bg-gradient-to-br from-[#132a4f] via-[#0d1a35] to-[#0a0f24] rounded-xl max-w-lg mx-auto p-4 shadow-xl">
+  <div id="Balance-card" class="bg-gradient-to-br from-[#132a4f] via-[#0d1a35] to-[#0a0f24] rounded-xl max-w-lg mx-auto p-4 shadow-xl">
       <!-- Logout part -->
       <div class="min-h-[50px] flex justify-between items-center max-w-lg mx-auto border-b border-gray-300 p-3">
         <div class="flex">
-          <img src="assets/Group.png" class="h-[50px]">
+          <img src="assets/payon_b1.png" class="h-[150px] -mr-10">
           <div class="ml-3">
-            <h2 class="font-bold text-xl text-white">$ <span id="available-balance">45000</span></h2>
+            <h2 class="font-bold text-xl text-white mt-12">$ <span id="available-balance">45000</span></h2>
             <p class="text-white">Available Balance</p>
           </div>
         </div>
@@ -39,33 +39,33 @@
       </div>
     
       <!-- Option part -->
-      <div class="bg-gradient-to-br from-[#16305a] via-[#112246] to-[#151f48] max-w-md mx-auto p-4 grid grid-cols-2 sm:grid-cols-3 gap-4 rounded-xl shadow-lg">
-        <div id="add-button" class="form-btn border-2 rounded-2xl border-gray-300 flex flex-col items-center justify-center p-4 cursor-pointer h-28 w-28 mx-auto shadow hover:shadow-md transition bg-white/10">
+      <div class="bg-gradient-to-br from-[#16305a] via-[#112246] to-[#151f48] max-w-md mx-auto p-4 grid grid-cols-2 sm:grid-cols-3 gap-4 rounded-xl shadow-lg shadow-blue-500">
+        <div id="add-button" class="form-btn border-2 rounded-2xl border-gray-300 flex flex-col items-center justify-center p-4 cursor-pointer h-28 w-28 mx-auto shadow-md shadow-blue-400 hover:shadow-md transition bg-white/10">
           <img src="assets/purse1.png" class="h-12 w-12" alt="Add Money">
           <h3 class="font-bold text-gray-200 text-center text-sm mt-2">Add Money</h3>
         </div>
 
-        <div id="cash-out-button" class="form-btn border-2 rounded-2xl border-gray-300 flex flex-col items-center justify-center p-4 cursor-pointer h-28 w-28 mx-auto shadow hover:shadow-md transition bg-white/10">
+        <div id="cash-out-button" class="form-btn border-2 rounded-2xl border-gray-300 flex flex-col items-center justify-center p-4 cursor-pointer h-28 w-28 mx-auto shadow-md shadow-blue-400 hover:shadow-md transition bg-white/10">
           <img src="assets/send1.png" class="h-12 w-12" alt="Cashout">
           <h3 class="font-bold text-gray-200 text-center text-sm mt-2">Cashout</h3>
         </div>
 
-        <div id="transfer-button" class="form-btn border-2 rounded-2xl border-gray-300 flex flex-col items-center justify-center p-4 cursor-pointer h-28 w-28 mx-auto shadow hover:shadow-md transition bg-white/10">
+        <div id="transfer-button" class="form-btn border-2 rounded-2xl border-gray-300 flex flex-col items-center justify-center p-4 cursor-pointer h-28 w-28 mx-auto shadow-md shadow-blue-400 hover:shadow-md transition bg-white/10">
           <img src="assets/money1.png" class="h-12 w-12" alt="Transfer Money">
           <h3 class="font-bold text-gray-200 text-center text-sm mt-2">Transfer</h3>
         </div>
 
-        <div id="Bonus-button" class="form-btn border-2 rounded-2xl border-gray-300 flex flex-col items-center justify-center p-4 cursor-pointer h-28 w-28 mx-auto shadow hover:shadow-md transition bg-white/10">
+        <div id="Bonus-button" class="form-btn border-2 rounded-2xl border-gray-300 flex flex-col items-center justify-center p-4 cursor-pointer h-28 w-28 mx-auto shadow-md shadow-blue-400 hover:shadow-md transition bg-white/10">
           <img src="assets/bonus1.png" class="h-12 w-12" alt="Get Bonus">
           <h3 class="font-bold text-gray-200 text-center text-sm mt-2">Bonus</h3>
         </div>
 
-        <div id="Bill-button" class="form-btn border-2 rounded-2xl border-gray-300 flex flex-col items-center justify-center p-4 cursor-pointer h-28 w-28 mx-auto shadow hover:shadow-md transition bg-white/10">
+        <div id="Bill-button" class="form-btn border-2 rounded-2xl border-gray-300 flex flex-col items-center justify-center p-4 cursor-pointer h-28 w-28 mx-auto shadow-md shadow-blue-400 hover:shadow-md transition bg-white/10">
           <img src="assets/wallet1.png" class="h-12 w-12" alt="Pay Bill">
           <h3 class="font-bold text-gray-200 text-center text-sm mt-2">Pay Bill</h3>
         </div>
 
-        <div id="Transactions-button" class="form-btn border-2 rounded-2xl border-gray-300 flex flex-col items-center justify-center p-4 cursor-pointer h-28 w-28 mx-auto shadow hover:shadow-md transition bg-white/10">
+        <div id="Transactions-button" class="form-btn border-2 rounded-2xl border-gray-300 flex flex-col items-center justify-center p-4 cursor-pointer h-28 w-28 mx-auto shadow-md shadow-blue-400 hover:shadow-md transition bg-white/10">
           <img src="assets/transaction1.png" class="h-12 w-12" alt="Transactions">
           <h3 class="font-bold text-gray-200 text-center text-sm mt-2">Transactions</h3>
         </div>
@@ -98,17 +98,17 @@
 
     <div class="mt-4">
         <h3 class="font-bold text-white">Bank Account Number</h3>
-        <input id="account-number" type="text" placeholder="Enter 11 digit account number" class="input bg-[#34506c] w-full rounded-full mt-3 px-4 py-2">
+        <input id="account-number" type="text" placeholder="Enter 11 digit account number" class="input bg-[#34506c] text-white w-full rounded-full mt-3 px-4 py-2">
     </div>
 
     <div class="mt-4">
         <h3 class="font-bold text-white">Amount to Add</h3>
-        <input id="add-amount" type="text" placeholder="Add Amount to withdraw" class="input bg-[#34506c] w-full rounded-full mt-3 px-4 py-2">
+        <input id="add-amount" type="text" placeholder="Add Amount to withdraw" class="input bg-[#34506c] text-white w-full rounded-full mt-3 px-4 py-2">
     </div>
 
     <div class="mt-4">
         <h3 class="font-bold text-white">Pin Number</h3>
-        <input id="add-pin" type="text" placeholder="Enter 4 digit pin number" class="input bg-[#34506c] w-full rounded-full mt-3 px-4 py-2">
+        <input id="add-pin" type="text" placeholder="Enter 4 digit pin number" class="input bg-[#34506c] text-white w-full rounded-full mt-3 px-4 py-2">
     </div>
 
     <button type="submit" class="btn w-full rounded-full mt-5 px-6 py-3 text-white font-semibold 
@@ -135,17 +135,17 @@
  
     <div class="mt-4">
         <h3 class="font-bold text-white">Agent Number</h3>
-        <input id="agent-number" type="text" placeholder="Enter 11 digit number" class="input bg-[#34506c] w-full rounded-full mt-3 px-4 py-2">
+        <input id="agent-number" type="text" placeholder="Enter 11 digit number" class="input bg-[#34506c] text-white w-full rounded-full mt-3 px-4 py-2">
     </div>
 
     <div class="mt-4">
         <h3 class="font-bold text-white">Amount</h3>
-        <input id="Withdraw-amount" type="text" placeholder="Enter amount to withdraw" class="input bg-[#34506c] w-full rounded-full mt-3 px-4 py-2">
+        <input id="Withdraw-amount" type="text" placeholder="Enter amount to withdraw" class="input bg-[#34506c] text-white w-full rounded-full mt-3 px-4 py-2">
     </div>
 
     <div class="mt-4">
         <h3 class="font-bold text-white">Pin Number</h3>
-        <input id="Withdraw-pin" type="text" placeholder="Enter 4 digit pin number" class="input bg-[#34506c] w-full rounded-full mt-3 px-4 py-2">
+        <input id="Withdraw-pin" type="text" placeholder="Enter 4 digit pin number" class="input bg-[#34506c] text-white w-full rounded-full mt-3 px-4 py-2">
     </div>
 
     <button type="submit" class="btn w-full rounded-full mt-5 px-6 py-3 text-white font-semibold 
@@ -172,17 +172,17 @@
  
     <div class="mt-4">
         <h3 class="font-bold text-white">User Account Number</h3>
-        <input id="user-number" type="text" placeholder="Enter 11 digit number" class="input bg-[#34506c] w-full rounded-full mt-3 px-4 py-2">
+        <input id="user-number" type="text" placeholder="Enter 11 digit number" class="input bg-[#34506c] text-white w-full rounded-full mt-3 px-4 py-2">
     </div>
 
     <div class="mt-4">
         <h3 class="font-bold text-white">Amount</h3>
-        <input id="transfer-amount" type="text" placeholder="Enter amount to withdraw" class="input bg-[#34506c] w-full rounded-full mt-3 px-4 py-2">
+        <input id="transfer-amount" type="text" placeholder="Enter amount to withdraw" class="input bg-[#34506c] text-white w-full rounded-full mt-3 px-4 py-2">
     </div>
 
     <div class="mt-4">
         <h3 class="font-bold text-white">Pin Number</h3>
-        <input id="transfer-pin" type="text" placeholder="Enter 4 digit pin number" class="input bg-[#34506c] w-full rounded-full mt-3 px-4 py-2">
+        <input id="transfer-pin" type="text" placeholder="Enter 4 digit pin number" class="input bg-[#34506c] text-white w-full rounded-full mt-3 px-4 py-2">
     </div>
 
     <button type="submit" class="btn w-full rounded-full mt-5 px-6 py-3 text-white font-semibold 
@@ -209,7 +209,7 @@
  
     <div class="mt-4">
         <h3 class="font-bold text-white">Enter Bonus Coupon</h3>
-        <input id="Bonus-Coupon" type="text" placeholder="Enter your coupon" class="input bg-[#34506c] w-full rounded-full mt-3 px-4 py-2">
+        <input id="Bonus-Coupon" type="text" placeholder="Enter your coupon" class="input bg-[#34506c] text-white w-full rounded-full mt-3 px-4 py-2">
     </div>
 
 
@@ -251,17 +251,17 @@
 
     <div class="mt-4">
         <h3 class="font-bold text-white">Biller Account Number</h3>
-        <input id="Bill-account-number" type="text" placeholder="Enter 11 digit account number" class="input bg-[#34506c] w-full rounded-full mt-3 px-4 py-2">
+        <input id="Bill-account-number" type="text" placeholder="Enter 11 digit account number" class="input bg-[#34506c] text-white w-full rounded-full mt-3 px-4 py-2">
     </div>
 
     <div class="mt-4">
         <h3 class="font-bold text-white">Amount to Pay</h3>
-        <input id="pay-amount" type="text" placeholder="Add Amount to pay" class="input bg-[#34506c] w-full rounded-full mt-3 px-4 py-2">
+        <input id="pay-amount" type="text" placeholder="Add Amount to pay" class="input bg-[#34506c] text-white w-full rounded-full mt-3 px-4 py-2">
     </div>
 
     <div class="mt-4">
         <h3 class="font-bold text-white">Pin Number</h3>
-        <input id="pay-pin" type="text" placeholder="Enter 4 digit pin number" class="input bg-[#34506c] w-full rounded-full mt-3 px-4 py-2">
+        <input id="pay-pin" type="text" placeholder="Enter 4 digit pin number" class="input bg-[#34506c] text-white w-full rounded-full mt-3 px-4 py-2">
     </div>
 
     <button type="submit" class="btn w-full rounded-full mt-5 px-6 py-3 text-white font-semibold 

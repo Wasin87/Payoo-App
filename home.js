@@ -39,6 +39,16 @@ function setInnerText(id, value){
       
 }
 
+// Function: Show Balance-card after transaction
+function showBalanceCard() {
+  const balanceCard = document.getElementById("Balance-card");
+  balanceCard.style.display = "block";
+  const forms = document.getElementsByClassName("form");
+  for (const form of forms) {
+    form.style.display = "none";
+  }
+}
+
 //Add money features--------
 document.getElementById('add-money-btn').addEventListener('click', function(e){
     e.preventDefault();
@@ -88,6 +98,7 @@ const data = {
 
 transactionData.push(data);
 
+ showBalanceCard();
     
 });
 
@@ -134,6 +145,7 @@ const data = {
 };
 
 transactionData.push(data);
+ showBalanceCard();
 
 });
 
@@ -185,7 +197,7 @@ const data = {
 };
 
 transactionData.push(data);
-
+ showBalanceCard();
      
 });
 
@@ -195,7 +207,7 @@ document.getElementById('Transactions-button').addEventListener('click', functio
   for (const data of transactionData) {
     const div = document.createElement("div")
     div.innerHTML = `
-      <div class="bg-gradient-to-br from-[#182f6a] via-[#1b2960] to-[#17386c] rounded-xl p-3 flex justify-between items-center mt-3">
+      <div class="bg-gradient-to-br from-[#182f6a] via-[#1b2960] to-[#17386c] shadow-md shadow-blue-400 rounded-xl p-3 flex justify-between items-center mt-4">
         <div class="flex items-center">
           <div class="p-3 rounded-full bg-[#2353b5]">
             <img src="assets/purse1.png" class="mx-auto" alt="">
@@ -224,7 +236,8 @@ document.getElementById('Bonus-btn').addEventListener('click', function(e){
         alert('🧾 Please provide valid bonus coupon');
         return;
     }
- 
+  showBalanceCard();
+
 });
 
 //Pay bill features--------
@@ -275,6 +288,7 @@ const data = {
 };
 
 transactionData.push(data);
+ showBalanceCard();
 
 });
 
