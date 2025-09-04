@@ -49,6 +49,7 @@ function showBalanceCard() {
   }
 }
 
+
 //Add money features--------
 document.getElementById('add-money-btn').addEventListener('click', function(e){
     e.preventDefault();
