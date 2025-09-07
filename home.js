@@ -88,7 +88,7 @@ document.getElementById('add-money-btn').addEventListener('click', function(e){
      setInnerText('available-balance', totalNewAvailableBalance);
 
 const data = {
-    name: `<span class="text-white">Transfer Money</span>`,
+    name: `<span class="text-white">Add money</span>`,
     date: `<span class="text-white">${new Date().toLocaleTimeString('en-US', { 
         hour: 'numeric', 
         minute: 'numeric', 
@@ -136,7 +136,7 @@ document.getElementById('Withdraw-btn').addEventListener('click', function(e){
     setInnerText('available-balance', totalNewAvailableBalance);
 
 const data = {
-    name: `<span class="text-white">Transfer Money</span>`,
+    name: `<span class="text-white">Cash out</span>`,
     date: `<span class="text-white">${new Date().toLocaleTimeString('en-US', { 
         hour: 'numeric', 
         minute: 'numeric', 
@@ -279,7 +279,7 @@ document.getElementById('pay-money-btn').addEventListener('click', function(e){
      setInnerText('available-balance', totalNewAvailableBalance);
 
 const data = {
-    name: `<span class="text-white">Transfer Money</span>`,
+    name: `<span class="text-white">Pay bill</span>`,
     date: `<span class="text-white">${new Date().toLocaleTimeString('en-US', { 
         hour: 'numeric', 
         minute: 'numeric', 
